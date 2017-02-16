@@ -5,7 +5,7 @@
 package api
 
 /*
-#cgo linux LDFLAGS: -l:ddoe27.so
+#cgo linux LDFLAGS: /opt/Progress/DataDirect/Connect64_for_ODBC_71/lib/ddoe27.so
 
 #include <stdio.h>
 #include <stdlib.h>
