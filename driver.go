@@ -31,6 +31,7 @@ func initDriver() error {
 	drv.h = api.SQLHENV(out)
 	drv.Stats.updateHandleCount(api.SQL_HANDLE_ENV, 1)
 
+	/*
 	// will use ODBC v3
 	ret = api.SQLSetEnvUIntPtrAttr(drv.h, api.SQL_ATTR_ODBC_VERSION, api.SQL_OV_ODBC3, 0)
 	if IsError(ret) {
@@ -52,7 +53,7 @@ func initDriver() error {
 		defer releaseHandle(drv.h)
 		return NewError("SQLSetEnvUIntPtrAttr", drv.h)
 	}
-
+	*/
 	//TODO: it would be nice if we could call "drv.SetMaxIdleConns(0)" here but from the docs it looks like
 	//the user must call this function after db.Open
 
