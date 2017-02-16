@@ -11,7 +11,7 @@ package api
 
 import "unsafe"
 /*
-#cgo linux LDFLAGS: -L ./libs -ddoe27 -lc
+#cgo linux LDFLAGS: -l:ddoe27.so
 
 #include <stdio.h>
 #include <stdlib.h>
