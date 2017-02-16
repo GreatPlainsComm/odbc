@@ -131,11 +131,11 @@ const (
 	SQL_ATTR_CP_MATCH           = C.SQL_ATTR_CP_MATCH
 	SQL_CP_OFF									= uintptr(0)
 	//SQL_CP_OFF                  = uintptr(C.SQL_CP_OFF)
-	SQL_CP_ONE_PER_DRIVER       = uintptr(C.SQL_CP_ONE_PER_DRIVER)
-	SQL_CP_ONE_PER_HENV         = uintptr(C.SQL_CP_ONE_PER_HENV)
-	SQL_CP_DEFAULT              = SQL_CP_OFF
-	SQL_CP_STRICT_MATCH         = uintptr(C.SQL_CP_STRICT_MATCH)
-	SQL_CP_RELAXED_MATCH        = uintptr(C.SQL_CP_RELAXED_MATCH)
+	//SQL_CP_ONE_PER_DRIVER       = uintptr(C.SQL_CP_ONE_PER_DRIVER)
+	//SQL_CP_ONE_PER_HENV         = uintptr(C.SQL_CP_ONE_PER_HENV)
+	//SQL_CP_DEFAULT              = SQL_CP_OFF
+	//SQL_CP_STRICT_MATCH         = uintptr(C.SQL_CP_STRICT_MATCH)
+	//SQL_CP_RELAXED_MATCH        = uintptr(C.SQL_CP_RELAXED_MATCH)
 )
 
 type (
