@@ -9,13 +9,6 @@ package api
 
 #include <stdio.h>
 #include <stdlib.h>
-
-#ifdef __MINGW32__
-  #include <windef.h>
-#else
-  typedef void* HANDLE;
-#endif
-
 #include <sql.h>
 #include <sqlext.h>
 #include <sqltypes.h>
