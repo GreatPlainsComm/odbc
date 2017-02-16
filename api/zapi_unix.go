@@ -11,12 +11,24 @@
 package api
 
 import "unsafe"
+/*
+#cgo linux LDFLAGS: ./ddoe27.so
 
-// #cgo darwin LDFLAGS: -lodbc -L/opt/local/lib
-// #cgo darwin CFLAGS: -I/opt/local/include
-// #cgo linux LDFLAGS: -lodbc
-// #include <sql.h>
-// #include <sqlext.h>
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifdef __MINGW32__
+  #include <windef.h>
+#else
+  typedef void* HANDLE;
+#endif
+
+#include <sql.h>
+#include <sqlext.h>
+#include <sqltypes.h>
+
+*/
+
 import "C"
 
 func SQLAllocHandle(handleType SQLSMALLINT, inputHandle SQLHANDLE, outputHandle *SQLHANDLE) (ret SQLRETURN) {

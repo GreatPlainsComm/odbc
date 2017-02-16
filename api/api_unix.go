@@ -7,12 +7,24 @@
 
 package api
 
-// #cgo darwin LDFLAGS: -lodbc -L/opt/local/lib
-// #cgo darwin CFLAGS: -I/opt/local/include
-// #cgo linux LDFLAGS: -lodbc
-// #include <sql.h>
-// #include <sqlext.h>
-// #include <stdint.h>
+/*
+#cgo linux LDFLAGS: ./ddoe27.so
+
+#include <stdio.h>
+#include <stdlib.h>
+
+#ifdef __MINGW32__
+  #include <windef.h>
+#else
+  typedef void* HANDLE;
+#endif
+
+#include <sql.h>
+#include <sqlext.h>
+#include <sqltypes.h>
+
+*/
+
 /*
 SQLRETURN sqlSetEnvUIntPtrAttr(SQLHENV environmentHandle, SQLINTEGER attribute, uintptr_t valuePtr, SQLINTEGER stringLength) {
 	return SQLSetEnvAttr(environmentHandle, attribute, (SQLPOINTER)valuePtr, stringLength);
