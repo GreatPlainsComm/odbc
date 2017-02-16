@@ -11,7 +11,7 @@ import (
 	"testing"
 	"time"
 
-	_ "github.com/alexbrainman/odbc"
+	_ "github.com/chris-gpc/odbc"
 )
 
 var (
@@ -95,7 +95,7 @@ func TestFoxPro(t *testing.T) {
 		},
 	}
 
-	const query = `select id, 
+	const query = `select id,
 		char, num_2_0, num_20_0, num_6_3, date,
 		float_2_0, float_20_0, float_6_3, logical, memo
 		from fldtest`
