@@ -5,7 +5,7 @@
 package api
 
 /*
-#cgo linux LDFLAGS: "-L${SRCDIR}/ddoe27.so"
+#cgo linux LDFLAGS: "-L${SRCDIR}/ddoe271.so"
 
 #include <stdio.h>
 #include <stdlib.h>
