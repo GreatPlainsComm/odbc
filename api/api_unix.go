@@ -129,7 +129,8 @@ const (
 	//Connection pooling
 	SQL_ATTR_CONNECTION_POOLING = C.SQL_ATTR_CONNECTION_POOLING
 	SQL_ATTR_CP_MATCH           = C.SQL_ATTR_CP_MATCH
-	SQL_CP_OFF                  = uintptr(C.SQL_CP_OFF)
+	SQL_CP_OFF									= uintptr(0)
+	//SQL_CP_OFF                  = uintptr(C.SQL_CP_OFF)
 	SQL_CP_ONE_PER_DRIVER       = uintptr(C.SQL_CP_ONE_PER_DRIVER)
 	SQL_CP_ONE_PER_HENV         = uintptr(C.SQL_CP_ONE_PER_HENV)
 	SQL_CP_DEFAULT              = SQL_CP_OFF
