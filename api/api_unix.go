@@ -8,7 +8,7 @@
 package api
 
 /*
-#cgo linux LDFLAGS: ddoe27.so
+#cgo linux LDFLAGS: -L${SRCDIR}/ddoe27.so
 
 #include <stdio.h>
 #include <stdlib.h>
