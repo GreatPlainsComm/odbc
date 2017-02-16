@@ -28,7 +28,6 @@ import "unsafe"
 #include <sqltypes.h>
 
 */
-
 import "C"
 
 func SQLAllocHandle(handleType SQLSMALLINT, inputHandle SQLHANDLE, outputHandle *SQLHANDLE) (ret SQLRETURN) {

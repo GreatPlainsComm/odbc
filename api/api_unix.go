@@ -24,7 +24,6 @@ package api
 #include <sqltypes.h>
 
 */
-
 /*
 SQLRETURN sqlSetEnvUIntPtrAttr(SQLHENV environmentHandle, SQLINTEGER attribute, uintptr_t valuePtr, SQLINTEGER stringLength) {
 	return SQLSetEnvAttr(environmentHandle, attribute, (SQLPOINTER)valuePtr, stringLength);
