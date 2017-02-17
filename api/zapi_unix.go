@@ -10,6 +10,7 @@
 package api
 
 import "unsafe"
+import "fmt"
 /*
 #cgo linux LDFLAGS: /opt/Progress/DataDirect/Connect64_for_ODBC_71/lib/ddoe27.so
 
@@ -74,6 +75,7 @@ func SQLExecute(statementHandle SQLHSTMT) (ret SQLRETURN) {
 
 func SQLFetch(statementHandle SQLHSTMT) (ret SQLRETURN) {
 	r := C.SQLFetch(C.SQLHSTMT(statementHandle))
+	fmt.Printf("SQLFetch: %v", r)
 	return SQLRETURN(r)
 }
 
