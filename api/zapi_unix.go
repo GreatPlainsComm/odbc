@@ -75,7 +75,7 @@ func SQLExecute(statementHandle SQLHSTMT) (ret SQLRETURN) {
 
 func SQLFetch(statementHandle SQLHSTMT) (ret SQLRETURN) {
 	r := C.SQLFetch(C.SQLHSTMT(statementHandle))
-	fmt.Printf("SQLFetch: %v", r)
+	fmt.Printf("\n\nSQLFetch: %v\n", r)
 	return SQLRETURN(r)
 }
 
