@@ -21,7 +21,7 @@ import (
 	"testing"
 	"time"
 
-	"github.com/chris-gpc/odbc/api"
+	"github.com/GreatPlainsComm/odbc/api"
 )
 
 var (

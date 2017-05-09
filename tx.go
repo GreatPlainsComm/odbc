@@ -8,7 +8,7 @@ import (
 	"database/sql/driver"
 	"errors"
 
-	"github.com/chris-gpc/odbc/api"
+	"github.com/GreatPlainsComm/odbc/api"
 )
 
 type Tx struct {
