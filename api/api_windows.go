@@ -108,6 +108,12 @@ const (
 	SQL_CP_DEFAULT              = SQL_CP_OFF
 	SQL_CP_STRICT_MATCH         = 0
 	SQL_CP_RELAXED_MATCH        = uintptr(1)
+
+	//Statement Attributes
+	SQL_ATTR_CURSOR_TYPE    = 0x00000001
+	SQL_ATTR_CONCURRENCY    = 0x0000000E
+	SQL_CURSOR_FORWARD_ONLY = 0
+	SQL_CONCUR_READ_ONLY    = 1
 )
 
 type (
@@ -144,4 +150,14 @@ func SQLSetConnectUIntPtrAttr(connectionHandle SQLHDBC, attribute SQLINTEGER, va
 	r0, _, _ := syscall.Syscall6(procSQLSetConnectAttrW.Addr(), 4, uintptr(connectionHandle), uintptr(attribute), uintptr(valuePtr), uintptr(stringLength), 0, 0)
 	ret = SQLRETURN(r0)
 	return
+}
+
+func SQLSetStmtAttr(statementHandle SQLHSTMT, attribute SQLINTEGER, valuePtr uintptr, stringLength SQLINTEGER) SQLRETURN {
+	r0, _, _ := syscall.Syscall6(procSQLSetStmtAttr.Addr(), 4,
+		uintptr(statementHandle),
+		uintptr(attribute),
+		uintptr(valuePtr),
+		uintptr(stringLength),
+		0, 0)
+	return SQLRETURN(r0)
 }
