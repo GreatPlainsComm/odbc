@@ -1,4 +1,6 @@
-module github.com/alexbrainman/odbc
+module github.com/GreatPlainsComm/odbc
+
+go 1.25.3
 
 require (
 	github.com/go-ole/go-ole v1.2.5
