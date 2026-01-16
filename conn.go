@@ -11,7 +11,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/alexbrainman/odbc/api"
+	"github.com/GreatPlainsComm/odbc/api"
 )
 
 type Conn struct {

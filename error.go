@@ -10,7 +10,7 @@ import (
 	"strings"
 	"unsafe"
 
-	"github.com/alexbrainman/odbc/api"
+	"github.com/GreatPlainsComm/odbc/api"
 )
 
 func IsError(ret api.SQLRETURN) bool {
